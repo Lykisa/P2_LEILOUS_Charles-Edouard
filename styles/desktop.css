@@ -1,0 +1,649 @@
+                            /* VARIABLE */
+ 
+:root
+{
+    --box-shadow-px: 5px;
+    --box-shadow-color: rgb(0 0 0 / 0.05);
+    --page-background-color: white;
+    --grey-background-color: #f2f2f2;
+    --lightblue-color: #dee8ff;
+    --blue-color: #0065fc;
+    --black-color: black;
+}
+
+                            /* GENERAL */
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+main
+{
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+                            /* HEADER */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#logo img
+{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+
+
+                            /* NAVIGATION */
+
+nav
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}  
+
+nav li
+{
+    
+    text-align: center;
+    padding-top: 40px;
+    border-top: 3px solid transparent;
+}
+
+nav a
+{
+    padding: 40px 30px;
+    text-decoration: none;
+}
+
+nav li:hover
+{
+    color: var(--blue-color);
+    border-top-color: var(--blue-color);
+}
+
+nav li:hover a 
+{
+    color: var(--blue-color);
+}
+
+                            /* INTRODUCTION */
+
+.intro
+{
+    margin-bottom: 20px;
+}
+
+.intro h3
+{
+    font-weight: bold;
+}
+
+.intro p
+{
+    margin: auto;
+}
+
+                            /* BARRE DE RECHERCHE */
+
+.barrerecherche form
+{
+    display: flex;
+}
+
+.map-marker
+{
+   background-color: var(--grey-background-color);
+   padding: 10px 15px;
+   border-radius: 15px 0 0 15px;
+}
+.boutonrecherche
+{
+    background-color: var(--blue-color);
+    color: var(--page-background-color);
+    border-radius: 0 15px 15px 0;
+    border: var(--blue-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mobile
+{
+    display: none;
+}
+
+.searchbar
+{
+    border: none;
+    /* border-right: none; */
+    border-top: 0.5px solid var(--grey-background-color);
+    border-bottom: 0.5px solid var(--grey-background-color);
+    padding-left: 20px;
+    outline: none;
+    
+}
+
+                            /* FILTRES */
+
+.filtres
+{
+    display: flex;
+}
+
+.filtres h3
+{
+    padding: 10px;
+    padding-left: 0;
+}
+
+.filtres ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+.filtres li
+{
+    margin-left: 25px;
+    margin-top: 5px;
+    align-items: center;
+    border: 3px solid var(--grey-background-color);
+    border-radius: 25px;
+    justify-content: space-between;
+}
+
+.sub-filtre
+{
+    text-align: center;
+}
+
+.sub-filtre:hover
+{
+    background-color: var(--lightblue-color);
+    border-radius: 25px;
+}
+
+.fa-money-bill-wave
+{
+    
+    background-color: var(--lightblue-color);
+    color: var(--blue-color);
+    padding: 10px;
+    border-radius: 50%;
+    height: 100%;
+    width: 20px;
+    height: 20px;
+    
+    
+}
+
+.fa-child
+{
+    background-color: var(--lightblue-color);
+    color: var(--blue-color);
+    padding: 10px;
+    border-radius: 50%;
+    height: 100%;
+    width: 20px;
+    height: 20px;
+    
+}
+
+.fa-heart
+{
+    background-color: var(--lightblue-color);
+    color: var(--blue-color);
+    padding: 10px;
+    border-radius: 50%;
+    height: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.fa-dog
+{
+    background-color: var(--lightblue-color);
+    color: var(--blue-color);
+    padding: 10px;
+    border-radius: 50%;
+    height: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.filtres li h3
+{
+    display: flex;
+}
+
+.sub-filtre span
+{
+    padding-left: 10px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.fa-info
+{
+    text-align: center;
+    color: var(--blue-color);
+    padding: 5px;
+    border: 2px solid var(--lightblue-color);
+    border-radius: 50%;
+    height: 100%;
+    height: 6px;
+    width: 6px;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.end-filtres
+{
+    margin-top: 20px;
+}
+
+                            /* HEBERGEMENTS */
+
+#hébergements
+{
+    background-color: var(--grey-background-color);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#hébergements h3
+{
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+
+.appartements 
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.appartements a
+{
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.sub-appartements
+{
+    justify-content: space-between;
+    flex-direction: column;
+    width: 250px;
+    margin: 20px;
+    background-color: var(--page-background-color);
+    border-radius: 5%;
+    padding-bottom: 10px;
+    box-shadow: var(--box-shadow-px) var(--box-shadow-px) var(--box-shadow-px) var(--box-shadow-color);
+}
+
+.sub-appartements img
+{
+    max-height: 100px;
+    max-width: 250px;
+    width: 240px; 
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+}
+
+.sub-appartements h4 
+{
+    margin-top: 10px;
+    color: var(--black-color);
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.sub-appartements p
+{
+    color: var(--black-color);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.sub-appartements span
+{
+    font-weight: bold;
+}
+
+                            /* RATING STARS HEBERGEMENTS */
+
+.rating
+{
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.fa-star
+{
+    flex-direction: row;
+}
+
+.blue
+{
+    color: var(--blue-color);
+}
+
+.grey
+{
+    color: var(--grey-background-color);
+}
+
+                            /* AFFICHER PLUS */
+
+.afficherplus a
+{
+    text-decoration: none;
+    color: var(--black-color);
+}
+.afficherplus p
+{
+    padding: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+                            /* LES PLUS POPULAIRES */
+
+#populaire
+{
+    background-color: var(--grey-background-color);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-bottom: 3px;
+    width: 100%;
+}
+
+.intropop
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.intropop h3
+{
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.fa-chart-line
+{
+    margin-right: 10px;
+    padding: 40px;
+    padding-bottom: 0;
+
+}
+.appartementpop
+{
+    justify-content: space-around;
+    align-content: center;
+}
+
+.appartementpop a
+{
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--black-color);
+    width: auto;
+}
+
+.sub-appartementpop
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: var(--page-background-color);
+    border-radius: 10px;
+    margin: 20px;
+    max-width:100%;
+    box-shadow: 5px 5px 5px var(--box-shadow-color);
+}
+
+.sub-appartementpop img
+{
+    max-width: 150px;
+    max-height: 200px;
+    height: 160px;
+    width: 150px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+
+.descriptionpop
+{
+    margin-left: 10px;
+    text-align: left;
+}
+.sub-appartementpop span
+{
+    font-weight: bold;
+}
+
+                            /* RATING STARS POPULAIRES */
+
+.rating-pop
+{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+                            /* HEBERGEMENTS + POPULAIRES */
+
+ 
+.hebpop
+{
+    display: flex;
+}
+
+article
+{
+    width: 65%;
+}
+
+aside
+{
+    padding-left:40px;
+    width:35%;
+}
+
+
+                            /* ACTIVITES */
+
+#activités
+{
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#activités h3
+{
+    padding-bottom: 30px;
+    margin-left: 30px;
+}
+
+.sub-activités
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+
+}
+
+.sub-activités div
+{
+    text-decoration: none;
+    justify-content: space-between;
+    color: var(--black-color);
+    width:100%;
+    max-height: 500px;
+}
+
+.colonne
+{
+    width:calc(25% - 30px);
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+.colonne h4
+{
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.grande
+{
+    width:calc(25% - 30px);
+    box-shadow: var(--box-shadow-px) var(--box-shadow-px) var(--box-shadow-px) var(--box-shadow-color);
+    border-radius: 10px;
+}
+
+.grande a 
+{
+    text-decoration: none;
+    color: var(--black-color);
+    box-shadow: var(--box-shadow-px) var(--box-shadow-px) var(--box-shadow-px) var(--box-shadow-color);
+    border-radius: 10px;
+
+}
+
+.grande img
+{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.petite
+{
+    box-shadow: var(--box-shadow-px) var(--box-shadow-px) var(--box-shadow-px) var(--box-shadow-color);
+    border-radius: 10px;
+    height: 100%;
+    max-height: 220px;
+    margin-bottom: 27px;
+}
+
+.petite a 
+{
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.petite img
+{
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.petite1
+{
+    height: 100%;
+}
+
+.petite1 img
+{
+    height: 100%;
+    height: 298px;
+}
+.petite2
+{
+    height: 100%;
+}
+
+.petite2 img
+{
+    height: 130px;
+}
+
+
+                            /* FOOTER */
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--grey-background-color);
+    font-family: 'Raleway', sans-serif;
+    padding-top: 20px;   
+}
+
+footer div
+{
+    width: 70%;
+}
+
+.apropos h4 , .noshébergements h4 , .assistance h4 
+{
+    padding-left: 40px;
+}
+
+.apropos ul , .noshébergements ul , .assistance ul
+{
+    list-style: none;
+}
+
+.apropos a , .noshébergements a , .assistance a
+{
+    text-decoration: none;
+    color: var(--black-color);
+} 
